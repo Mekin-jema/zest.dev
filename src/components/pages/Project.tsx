@@ -2,13 +2,6 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { Globe, Github } from "lucide-react";
 
-import chatImage from "../../assets/projects/chat.png";
-import turfImage from "../../assets/projects/turf.png";
-import foodImage from "../../assets/projects/food.png";
-import todoImage from "../../assets/projects/todo.png";
-import eStoreImage from "../../assets/projects/estore.png";
-import expenseTrackerImage from "../../assets/projects/expense-tracker.png";
-
 interface Project {
   title: string;
   description: string;
@@ -18,172 +11,144 @@ interface Project {
 }
 const projects: Project[] = [
   {
-    title: "Turf Spot",
+    title: "Ambalay Maps",
     description:
-      "TurfSpot is a MERN stack application for booking turf grounds, featuring User, Owner, and Admin modules. Users can book turfs, manage bookings, and apply to become owners. Owners can add turfs and manage bookings. Admins oversee user management and transactions, ensuring a smooth booking experience.",
+      "Designed and developed a user-friendly dashboard for map-based services, integrating tools for route planning, geocoding, and real-time traffic updates. Built production-ready APIs for geospatial data using Node.js, Express.js, and Python. Created map rendering features leveraging OpenMapTiles, MapLibre, and Valhalla, and implemented localization features, including Amharic language support.",
     technologies: [
-      "React.js",
-      "JavaScript",
-      "MongoDB",
-      "Express.js",
       "Node.js",
-      "Tailwind CSS",
-      "Razorpay",
-      "Daisy UI",
-      "Cloudinary",
-      "Redux Toolkit",
-      "Redux Persist",
+      "Express.js",
+      "Python",
+      "MongoDB",
+      "PostgreSQL",
+      "React.js",
+      "MapLibre",
+      "OpenMapTiles",
+      "Valhalla",
     ],
     links: [
       {
         type: "Website",
-        href: "https://turf-spot.vercel.app/",
+        href: "https://ambalaymaps.com",
         icon: <Globe className="w-4 h-4" />,
       },
       {
         type: "Source",
-        href: "https://github.com/RijoKsd/TurfSpot",
+        href: "https://github.com/YourUsername/AmbalayMaps",
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: turfImage,
+    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
   },
   {
-    title: "Expense Tracker",
+    title: "IoT-Based Smart Sewage Monitoring System",
     description:
-      "Expense-Tracker is a MERN stack application that helps users manage their monthly expenses. It features secure login with JWT, an adjustable monthly expense limit, and tools to add, view, and delete expenses. The app also provides a graphical overview of the remaining balance and allows users to track expenses across different months",
+      "Integrated pH, gas, and ultrasonic sensors to monitor sewer conditions, sending real-time alerts for overflows and gas concentrations. Designed a web-based admin dashboard and mobile app for data visualization, feedback, and worker assignments. Utilized ESP8266 for wireless communication and MongoDB for cloud storage to ensure efficient monitoring and reporting.",
     technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
       "React.js",
+      "IoT",
+      "ESP8266",
+      "Arduino",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://iot-sewage-monitoring.com",
+        icon: <Globe className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/YourUsername/IOT-Sewage-Monitoring",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
+  },
+  {
+    title: "LMS - Learning Management System",
+    description:
+      "Built a scalable industrial-level LMS platform using MongoDB, Express, React, Node.js, and TypeScript. Implemented advanced course management, user authentication, JWT-based session handling, and real-time notifications. Designed a modern Admin Dashboard with user/course management and integrated social login options and secure order tracking.",
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
       "TypeScript",
-      "MongoDB",
-      "Express.js",
-      "Node.js",
-      "Tailwind CSS",
-      "Mantine UI",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://expense-log.vercel.app/",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/RijoKsd/Expense-Tracker",
-        icon: <Github className="w-4 h-4" />,
-      },
-    ],
-    image: expenseTrackerImage,
-  },
-  {
-    title: "Chat Application",
-    description:
-      "I created a real-time chat application using the MERN stack, incorporating JWT authentication and Socket.io for seamless communication. Users can send messages to different users in real time, and the system provides instant notifications whenever they receive new messages, ensuring smooth and interactive conversations.",
-    technologies: [
-      "React.js",
-      "JavaScript",
-      "MongoDB",
-      "Express.js",
-      "Node.js",
-      "Tailwind CSS",
-      "Daisy UI",
       "Socket.io",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://chat-application-in4i.onrender.com/",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/RijoKsd/Chat-Application",
-        icon: <Github className="w-4 h-4" />,
-      },
-    ],
-    image: chatImage,
-  },
-  {
-    title: "Food Delivery App",
-    description:
-      "Food Delivery App is a user-friendly application that allows users to browse and purchase food items from various menus. It features an admin section for managing products and orders, including adding new items, updating order statuses, and viewing all products. The app also includes a dummy Stripe payment integration and product filtering options for users",
-    technologies: [
-      "React.js",
-      "JavaScript",
-      "MongoDB",
-      "Express.js",
-      "Node.js",
+      "Redis",
       "Tailwind CSS",
-      "Stripe",
-      "Zustand",
+      "RTK Query",
+      "Node-cron",
     ],
     links: [
       {
         type: "Website",
-        href: "https://food-delivery-app-fe.vercel.app/",
+        href: "https://lms-platform.com",
         icon: <Globe className="w-4 h-4" />,
       },
       {
         type: "Source",
-        href: "https://github.com/RijoKsd/food-delivery-app",
+        href: "https://github.com/YourUsername/LMS-Platform",
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: foodImage,
+    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
   },
   {
-    title: "TODO App",
+    title: "MERN Stack Real-Estate Application",
     description:
-      "Todo App is a full-stack application built with the MERN stack, offering users the ability to register, log in, and reset their password using an OTP sent via email. It supports complete CRUD operations for managing todos, allows users to view pending and completed tasks, and provides options to view and edit their profile. JWT protected routes ensure secure access throughout the application.",
+      "Developed a real estate platform with advanced authentication using JWT, bcrypt.js, and Google Login. Integrated Firebase for image uploads, implemented Redux Toolkit for state management, and designed a fully responsive interface with advanced search and optimized routing.",
     technologies: [
       "React.js",
-      "JavaScript",
-      "MongoDB",
       "Express.js",
-      "Node.js",
-      "Bootstrap",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://todo-app-mern-fe.vercel.app/",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/RijoKsd/Todo-App-Mern",
-        icon: <Github className="w-4 h-4" />,
-      },
-    ],
-    image: todoImage,
-  },
-  {
-    title: "E-Commerce Website",
-    description:
-      "E-Store is a React-based e-commerce site that lets users manage their cart by adding, deleting, and updating products, and completing purchases. It uses Redux Toolkit and Context API for state management, Redux Persist for localStorage, and features styling with Tailwind CSS and Daisy UI. The app includes smooth animations",
-    technologies: [
-      "React.js",
-      "JavaScript",
-      "Tailwind CSS",
-      "Daisy UI",
+      "JWT",
+      "Firebase",
       "Redux Toolkit",
-      "Redux Persist",
+      "Tailwind CSS",
     ],
     links: [
       {
         type: "Website",
-        href: "https://react-estore-app.vercel.app/",
+        href: "https://real-estate-app.com",
         icon: <Globe className="w-4 h-4" />,
       },
       {
         type: "Source",
-        href: "https://github.com/RijoKsd/E-Store",
+        href: "https://github.com/YourUsername/Real-Estate-App",
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: eStoreImage,
+    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
+  },
+  {
+    title: "MERN Blog Application",
+    description:
+      "Built a blogging platform with secure user authentication via JWT and bcrypt.js. Created an admin dashboard for managing posts and interactions, with MongoDB as the backend.",
+    technologies: [
+      "React.js",
+      "Express.js",
+      "JWT",
+      "bcrypt.js",
+      "MongoDB",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://blog-app.com",
+        icon: <Globe className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/YourUsername/MERN-Blog-Application",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
   },
 ];
+
 
 const ProjectsSection: React.FC = () => {
   return (
