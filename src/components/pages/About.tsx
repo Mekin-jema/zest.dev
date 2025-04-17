@@ -73,9 +73,8 @@ const About: React.FC = () => {
           className="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center md:text-left mb-4"
           variants={itemVariants}
         >
-          I'm a skilled MERN stack developer with a strong passion for crafting
-          innovative web solutions. With expertise in MongoDB, Express.js,
-          React.js, and Node.js, I've successfully developed real-world projects
+          I'm a skilled Full stack developer with a strong passion for crafting
+          innovative web solutions.I've successfully developed real-world projects
           that are both robust and scalable. I thrive on turning ideas into
           functional applications and continuously strive to improve my craft.
           My goal is to create efficient, user-friendly, and impactful digital
@@ -85,8 +84,7 @@ const About: React.FC = () => {
           className="text-sm md:text-base text-gray-600 dark:text-gray-400 text-center md:text-left"
           variants={itemVariants}
         >
-          My commitment to continuous learning ensures cutting-edge solutions
-          for every project.
+        I am dedicated to constant learning, which allows me to deliver innovative, up-to-date solutions for every project.
         </motion.p>
       </div>
     </motion.div>

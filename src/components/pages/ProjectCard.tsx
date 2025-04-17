@@ -12,7 +12,7 @@ interface ProjectCardProps {
   project: Project;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+const ProjectCard= ({ project }:ProjectCardProps) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
@@ -27,11 +27,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="flex space-x-4">
           {project.links.map((link, index) => (
             <a
-              key={index}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-200 transition-colors"
+              // key={index}
+              // href={link.href}
+              // target="_blank"
+              // rel="noopener noreferrer"
+              className="text-white transition-colors"
             >
               {link.icon}
             </a>

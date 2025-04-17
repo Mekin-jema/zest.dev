@@ -104,9 +104,9 @@ const SkillsSection: React.FC = () => {
             >
               <Badge
                 variant="outline"
-                className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300 text-sm sm:text-base px-3 py-1 rounded-full transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+                className=" capitalize bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300 text-sm sm:text-base px-3 py-1 rounded-full transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
               >
-                {slug.charAt(0).toUpperCase() + slug.slice(1)}
+                {slug}
               </Badge>
             </motion.div>
           ))}
