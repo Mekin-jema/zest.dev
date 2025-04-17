@@ -27,10 +27,10 @@ const ProjectCard= ({ project }:ProjectCardProps) => {
         <div className="flex space-x-4">
           {project.links.map((link, index) => (
             <a
-              // key={index}
-              // href={link.href}
-              // target="_blank"
-              // rel="noopener noreferrer"
+              key={index}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white transition-colors"
             >
               {link.icon}
