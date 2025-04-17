@@ -12,36 +12,48 @@ import { BriefcaseIcon, CodeIcon } from "lucide-react";
 
 const Experience: React.FC = () => {
   const experiences = [
-   {
-      title: "Junior Software Developer",
-      company: "Datafloat Technologies India Pvt Ltd",
-      location: "Infopark, Kochi",
-      duration: "Oct 2024 - Present",
-      description: "",
-      icon: <CodeIcon className="w-6 h-6" />,
-      skills: ["MongoDB", "Express.js", "React", "Node.js"],
-    },
     {
-      title: "MERN Stack Intern",
-      company: "Futura Labs Technologies",
-      location: "Calicut",
-      duration: "Feb 2024 - Sep 2024",
+      title: "React Module Instructor",
+      company: "Google Developer Group (GDG)",
+      location: "Both (remote and in person)",
+      duration: "March 2025 – Present",
       description:
-        "Working on MERN stack projects, contributing to full-stack development.",
-      icon: <BriefcaseIcon className="w-6 h-6" />,
-      skills: ["MongoDB", "Express.js", "React", "Node.js"],
+        "Delivering engaging React.js training sessions to aspiring developers as part of the Google Developer Group program at Innovation center, AAiT. Designed and taught React fundamentals, mentored participants through hands-on projects, and fostered an interactive learning environment.",
+      icon: <CodeIcon className="w-6 h-6" />,
+      skills: ["React", "JavaScript", "State Management", "API Integration"],
     },
     {
-      title: "Freelance Web Developer",
-      company: "Self-employed",
+      title: "Frontend Engineer",
+      company: "Ambalay Maps",
       location: "Remote",
-      duration: "2020 - 2024",
+      duration: "January 2025 – Present",
       description:
-        "Developing custom web solutions for various clients, specializing in responsive and dynamic websites.",
+        "Gained hands-on experience in full-stack development and geospatial technologies. Designed a user-friendly dashboard for map-based services, built and enhanced production-ready APIs, and implemented localization features including Amharic language support.",
       icon: <CodeIcon className="w-6 h-6" />,
-      skills: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+      skills: ["React", "Node.js", "Express.js", "Python", "PostgreSQL", "MongoDB", "Geospatial Data"],
+    },
+    {
+      title: "Computer Engineer Intern",
+      company: "Ministry of Industry – Ethiopia",
+      location: "Ethiopia",
+      duration: "October 2024 – January 2025",
+      description:
+        "Acquired a diverse skill set through various professional experiences. Collaborated with a company specializing in wired and wireless earphones, and developed a website to facilitate product importation, including tools for managing HS codes and product specifications.",
+      icon: <BriefcaseIcon className="w-6 h-6" />,
+      skills: ["Web Development", "JavaScript", "Product Management", "Database Integration"],
+    },
+    {
+      title: "Frontend Developer",
+      company: "Prodigy InfoTech and Oasis Infobyte",
+      location: "India (Remote)",
+      duration: "May 2024 – June 2024",
+      description:
+        "Assisted in building and maintaining web applications using JavaScript, focusing on frontend development and enhancing user interfaces.",
+      icon: <CodeIcon className="w-6 h-6" />,
+      skills: ["JavaScript", "HTML", "CSS", "React"],
     },
   ];
+  
 
   const containerVariants = {
     hidden: { opacity: 0 },
