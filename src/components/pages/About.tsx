@@ -45,7 +45,7 @@ const About: React.FC = () => {
         <motion.div
           whileHover={{ scale: 1.05, rotate: 5 }}
           whileTap={{ scale: 0.95 }}
-          className="relative w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden shadow-lg"
+          className="relative w-32 h-32 md:w-64 md:h-80 mx-auto rounded-xl overflow-hidden shadow-lg"
           animate={{
             y: [0, -10, 0],
           }}
