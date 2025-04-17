@@ -37,7 +37,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
+    image: "./ambalay-maps3.png" // Random image URL from Lorem Picsum
   },
   {
     title: "IoT-Based Smart Sewage Monitoring System",
@@ -94,7 +94,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
+    image: "./learning-management.png", // Random image URL from Lorem Picsum
   },
   {
     title: "MERN Stack Real-Estate Application",
@@ -145,7 +145,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
+    image: "./my-blog.png", // Random image URL from Lorem Picsum
   },
 ];
 

@@ -56,7 +56,7 @@ const About: React.FC = () => {
           }}
         >
           <img
-            src="/favicon.ico"
+            src="/me.png"
             alt="Rijo Sebastian"
             className="w-full h-full object-cover object-left-top"
           />
