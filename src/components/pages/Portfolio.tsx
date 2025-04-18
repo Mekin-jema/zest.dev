@@ -9,6 +9,7 @@ import Experience from "./Experience";
 import SkillsSection from "./SkillSection";
 import ProjectsSection from "./Project";
 import Footer from "./Footer";
+import { MarqueeDemo } from "./MarqueeDemo";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -96,9 +97,9 @@ function Portfolio() {
             <Header />
           </div>
         </motion.div>
-        <AnimatedSection>
+        {/* <AnimatedSection> */}
           <About />
-        </AnimatedSection>
+        {/* </AnimatedSection> */}
         <AnimatedSection>
           <Experience />
         </AnimatedSection>
@@ -107,6 +108,10 @@ function Portfolio() {
         </AnimatedSection>
         <AnimatedSection>
           <ProjectsSection />
+        </AnimatedSection>
+    
+         <AnimatedSection>
+         <MarqueeDemo />
         </AnimatedSection>
         <AnimatedSection>
           <Footer />

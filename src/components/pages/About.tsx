@@ -37,7 +37,7 @@ const imageVariants = {
 const About: React.FC = () => {
   return (
     <motion.div
-      className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl"
+      className="flex flex-col md:flex-row items-center justify-between w-full  max-w-6xl p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
