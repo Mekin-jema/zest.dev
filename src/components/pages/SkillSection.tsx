@@ -79,7 +79,8 @@ const SkillsSection: React.FC = () => {
       animate={controls}
     >
       <motion.h2
-        className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-center text-gray-800 dark:text-gray-200"
+        className="text-4xl  text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
+
         variants={itemVariants}
       >
         Skills

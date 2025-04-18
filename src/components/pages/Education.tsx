@@ -12,7 +12,7 @@ const Education = (props: Props) => {
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       <motion.h1
-        className="text-4xl font-extrabold text-center mb-8 text-gray-800 dark:text-white"
+        className="text-4xl  text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}

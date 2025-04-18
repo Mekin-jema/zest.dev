@@ -69,7 +69,9 @@ const About: React.FC = () => {
       {/* Text & Download Section */}
       <div className="md:w-2/3 md:pl-6 text-center md:text-left">
         <motion.h2
-          className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200"
+                  className="text-4xl  text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
+
+
           variants={itemVariants}
         >
           About Me

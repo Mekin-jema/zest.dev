@@ -135,7 +135,9 @@ export default function MarqueeDemo() {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <motion.h2
-        className="text-2xl md:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200"
+        className="text-4xl  text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
+         
+
         variants={itemVariants}
       >
         Testimonials
