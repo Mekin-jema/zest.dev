@@ -1,9 +1,8 @@
-import React from 'react'
+
 import { motion } from 'framer-motion'
 
-type Props = {}
 
-const Education = (props: Props) => {
+const Education = () => {
   return (
     <motion.div
       className="max-w-4xl mx-auto px-6 py-10 bg-white dark:bg-gray-900 rounded-2xl shadow-lg"
