@@ -49,7 +49,7 @@ const ProjectCard= ({ project }:ProjectCardProps) => {
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-64 object-cover"
+    className="w-full h-auto max-h-60 object-contain"
       />
       <div className="p-4">
         <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">

@@ -28,7 +28,7 @@ const projects: Project[] = [
     links: [
       {
         type: "Website",
-        href: "https://ambalaymaps.com",
+        href: "https://sample-steel-six.vercel.app/dashboard",
         icon: <Globe className="w-4 h-4" />,
       },
       {
@@ -37,7 +37,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "./ambalay-maps3.png" // Random image URL from Lorem Picsum
+    image: "./ambalay-maps4.png" // Random image URL from Lorem Picsum
   },
   {
     title: "Ministry of Industry Website Development",
@@ -92,7 +92,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
+    image: "/iot.png", // Random image URL from Lorem Picsum
   },
   {
     title: "LMS - Learning Management System",
@@ -135,6 +135,10 @@ const projects: Project[] = [
       "Firebase",
       "Redux Toolkit",
       "Tailwind CSS",
+      "Google Auth",
+      "Node.js",
+      "MongoDB",
+      "bcrypt.js",
     ],
     links: [
       {
@@ -148,7 +152,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "https://picsum.photos/200/300", // Random image URL from Lorem Picsum
+    image: "/real-estate.png", // Random image URL from Lorem Picsum
   },
   {
     title: "MERN Blog Application",
