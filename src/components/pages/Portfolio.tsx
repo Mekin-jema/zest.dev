@@ -10,6 +10,7 @@ import SkillsSection from "./SkillSection";
 import ProjectsSection from "./Project";
 import Footer from "./Footer";
 import MarqueeDemo from "./MarqueeDemo";
+import Education from "./Education";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -99,6 +100,9 @@ function Portfolio() {
         </motion.div>
         <AnimatedSection>
           <About />
+        </AnimatedSection>
+        <AnimatedSection>
+         <Education />
         </AnimatedSection>
         <AnimatedSection>
           <Experience />
