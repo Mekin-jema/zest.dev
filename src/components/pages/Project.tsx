@@ -40,6 +40,34 @@ const projects: Project[] = [
     image: "./ambalay-maps3.png" // Random image URL from Lorem Picsum
   },
   {
+    title: "Ministry of Industry Website Development",
+    description:
+      "Led the design and development of the official website for the Ministry of Industry, focusing on creating an intuitive user interface and seamless user experience. Implemented responsive design principles to ensure accessibility across various devices and browsers. Integrated dynamic content management features to allow for easy updates and maintenance by the ministry's staff. Emphasized performance optimization and adherence to web accessibility standards to enhance user engagement and satisfaction.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vercel"
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://minstry-of-industry.vercel.app",
+        icon: <Globe className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/YourUsername/ministry-website",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: "/ministry-of-industry.png",
+  }
+,  
+  {
     title: "IoT-Based Smart Sewage Monitoring System",
     description:
       "Integrated pH, gas, and ultrasonic sensors to monitor sewer conditions, sending real-time alerts for overflows and gas concentrations. Designed a web-based admin dashboard and mobile app for data visualization, feedback, and worker assignments. Utilized ESP8266 for wireless communication and MongoDB for cloud storage to ensure efficient monitoring and reporting.",
