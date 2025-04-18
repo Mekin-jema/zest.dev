@@ -17,7 +17,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/RijoKsd/React-Portfolio.git
+   git clone https://github.com/Mekin-jema/zest.dev.git
    cd React-Portfolio
    npm install
 
