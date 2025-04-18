@@ -142,7 +142,7 @@ const Experience: React.FC = () => {
                     >
                       <Badge
                         variant="outline"
-                        className="bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-300"
+                        className="bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-300 cursor-pointer"
                       >
                         {skill}
                       </Badge>

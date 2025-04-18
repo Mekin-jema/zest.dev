@@ -1,8 +1,8 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import IconCloud from "@/components/magicui/icon-cloud";
 import { useInView } from "react-intersection-observer";
+import { IconCloud } from "../magicui/icon-cloud";
+import { Badge } from "../ui/badge";
 
 const slugs = [
   "typescript",
@@ -66,6 +66,10 @@ const SkillsSection: React.FC = () => {
     },
   };
 
+  const images = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  );
+
   return (
     <motion.div
       ref={ref}
@@ -83,12 +87,12 @@ const SkillsSection: React.FC = () => {
 
       <div className="flex flex-col items-center justify-center space-y-6">
         <motion.div
-          className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg px-4 py-8"
+          className="relative flex  w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg px-4"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.5 }}
         >
-          <IconCloud iconSlugs={slugs} />
+          <IconCloud images={images} />
         </motion.div>
 
         <motion.div
