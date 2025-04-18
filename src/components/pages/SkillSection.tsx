@@ -73,7 +73,7 @@ const SkillsSection: React.FC = () => {
   return (
     <motion.div
       ref={ref}
-      className="w-full max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 bg-background rounded-xl shadow-lg mt-10   mb-6"
+      className=" max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 bg-background rounded-xl shadow-lg mt-10 w-[700px]  mb-6"
       variants={containerVariants}
       initial="hidden"
       animate={controls}
@@ -92,11 +92,12 @@ const SkillsSection: React.FC = () => {
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.5 }}
         >
-          <IconCloud images={images} />
+   <IconCloud images={images}  />
+
         </motion.div>
 
         <motion.div
-          className="flex flex-wrap justify-center gap-2"
+          className="flex flex-wrap  justify-start gap-2"
           variants={itemVariants}
         >
           {slugs.map((slug, index) => (
@@ -104,11 +105,11 @@ const SkillsSection: React.FC = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
+              whileTap={{ scale: 0.9 }} className="flex items-center justify-start p-0"
             >
               <Badge
                 variant="outline"
-                className=" capitalize bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300 text-sm sm:text-base px-3 py-1 rounded-full transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+                className=" capitalize cursor-pointer bg-black text-white dark:bg-[#FAFAFA]   dark:text-black text-sm sm:text-base ml-0  rounded-lg transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-300 "
               >
                 {slug}
               </Badge>

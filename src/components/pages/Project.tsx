@@ -174,6 +174,8 @@ const ProjectsSection: React.FC = () => {
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
+
+         
         </motion.div>
       </div>
     </section>

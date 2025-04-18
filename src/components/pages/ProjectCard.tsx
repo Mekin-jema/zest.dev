@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import { BorderBeam } from "../magicui/border-beam";
+import { useTheme } from "next-themes";
+import { Card } from "../ui/card";
+import { MagicCard } from "../magicui/magic-card";
 
 interface Project {
   title: string;
@@ -13,12 +17,18 @@ interface ProjectCardProps {
 }
 
 const ProjectCard= ({ project }:ProjectCardProps) => {
+
+  const { theme } = useTheme();
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className="relative border border-gray-300 dark:border-gray-700 rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 bg-white dark:bg-gray-800"
     >
+
+
+    <Card>
+      <MagicCard gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}>
       <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
         <h3 className="text-2xl font-bold text-white mb-4">{project.title}</h3>
         <p className="text-gray-300 text-sm mb-4 text-center">
@@ -58,6 +68,12 @@ const ProjectCard= ({ project }:ProjectCardProps) => {
           ))}
         </div>
       </div>
+
+      <BorderBeam duration={8} size={100} />
+
+
+      </MagicCard>
+    </Card>
     </motion.div>
   );
 };
