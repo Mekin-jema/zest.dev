@@ -50,7 +50,7 @@ const About: React.FC = () => {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden border-[5px] border-blue-500 shadow-xl bg-gradient-to-br from-blue-100 to-blue-200"
+          className="w-44 h-44 md:w-60 md:h-80  overflow-hidden border-[5px] border-blue-500 shadow-xl bg-gradient-to-br from-blue-100 to-blue-200"
           animate={{ y: [0, -10, 0] }}
           transition={{
             duration: 5,
@@ -61,7 +61,7 @@ const About: React.FC = () => {
           <img
             src="/me.png"
             alt="Mekin Jemal"
-            className="w-full h-full object-cover"
+            className="w-full h-full "
           />
         </motion.div>
       </motion.div>
@@ -94,12 +94,12 @@ const About: React.FC = () => {
 
         {/* Download CV Button */}
         <motion.a
-          href="/Mekin_Jemal_CV.pdf"
+          href="./Mekin_Jemal_Main_CV.pdf"
           download
           variants={itemVariants}
-          className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300"
+          className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 cursor-pointer text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-all z-[99999] duration-300"
         >
-          <FiDownload className="text-xl" />
+          <FiDownload className="text-xl " />
           Download CV
         </motion.a>
       </div>
