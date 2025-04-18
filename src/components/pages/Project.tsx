@@ -13,17 +13,10 @@ const projects: Project[] = [
   {
     title: "Ambalay Maps",
     description:
-      "Designed and developed a user-friendly dashboard for map-based services, integrating tools for route planning, geocoding, and real-time traffic updates. Built production-ready APIs for geospatial data using Node.js, Express.js, and Python. Created map rendering features leveraging OpenMapTiles, MapLibre, and Valhalla, and implemented localization features, including Amharic language support.",
+      "Built a map service dashboard with route planning, geocoding, real-time traffic, and Amharic localization. Developed geospatial APIs and rendering using OpenMapTiles, MapLibre, and Valhalla.",
     technologies: [
-      "Node.js",
-      "Express.js",
-      "Python",
-      "MongoDB",
-      "PostgreSQL",
-      "React.js",
-      "MapLibre",
-      "OpenMapTiles",
-      "Valhalla",
+      "Node.js", "Express.js", "Python", "MongoDB", "PostgreSQL", 
+      "React.js", "MapLibre", "OpenMapTiles", "Valhalla"
     ],
     links: [
       {
@@ -37,20 +30,15 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "./ambalay-maps4.png" // Random image URL from Lorem Picsum
+    image: "./ambalay-maps4.png"
   },
   {
     title: "Ministry of Industry Website Development",
     description:
-      "Led the design and development of the official website for the Ministry of Industry, focusing on creating an intuitive user interface and seamless user experience. Implemented responsive design principles to ensure accessibility across various devices and browsers. Integrated dynamic content management features to allow for easy updates and maintenance by the ministry's staff. Emphasized performance optimization and adherence to web accessibility standards to enhance user engagement and satisfaction.",
+      "Designed and developed a responsive, accessible website for the Ministry of Industry with CMS features for easy updates and performance optimizations.",
     technologies: [
-      "React.js",
-      "Next.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Vercel"
+      "React.js", "Next.js", "Tailwind CSS", "Node.js", "Express.js", 
+      "MongoDB", "Vercel"
     ],
     links: [
       {
@@ -65,20 +53,14 @@ const projects: Project[] = [
       },
     ],
     image: "/ministry-of-industry.png",
-  }
-,  
+  },
   {
     title: "IoT-Based Smart Sewage Monitoring System",
     description:
-      "Integrated pH, gas, and ultrasonic sensors to monitor sewer conditions, sending real-time alerts for overflows and gas concentrations. Designed a web-based admin dashboard and mobile app for data visualization, feedback, and worker assignments. Utilized ESP8266 for wireless communication and MongoDB for cloud storage to ensure efficient monitoring and reporting.",
+      "Used pH, gas, and ultrasonic sensors to monitor sewer systems. Developed dashboards and apps for alerts, data visualization, and task management using ESP8266 and MongoDB.",
     technologies: [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "React.js",
-      "IoT",
-      "ESP8266",
-      "Arduino",
+      "Node.js", "Express.js", "MongoDB", "React.js", "IoT", 
+      "ESP8266", "Arduino"
     ],
     links: [
       {
@@ -92,23 +74,15 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "/iot.png", // Random image URL from Lorem Picsum
+    image: "/iot-1.png",
   },
   {
     title: "LMS - Learning Management System",
     description:
-      "Built a scalable industrial-level LMS platform using MongoDB, Express, React, Node.js, and TypeScript. Implemented advanced course management, user authentication, JWT-based session handling, and real-time notifications. Designed a modern Admin Dashboard with user/course management and integrated social login options and secure order tracking.",
+      "Built a scalable LMS with real-time notifications, user auth, admin dashboard, and course management using MERN stack and TypeScript.",
     technologies: [
-      "MongoDB",
-      "Express.js",
-      "React.js",
-      "Node.js",
-      "TypeScript",
-      "Socket.io",
-      "Redis",
-      "Tailwind CSS",
-      "RTK Query",
-      "Node-cron",
+      "MongoDB", "Express.js", "React.js", "Node.js", "TypeScript", 
+      "Socket.io", "Redis", "Tailwind CSS", "RTK Query", "Node-cron"
     ],
     links: [
       {
@@ -122,23 +96,15 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "./learning-management.png", // Random image URL from Lorem Picsum
+    image: "./learning-management.png",
   },
   {
     title: "MERN Stack Real-Estate Application",
     description:
-      "Developed a real estate platform with advanced authentication using JWT, bcrypt.js, and Google Login. Integrated Firebase for image uploads, implemented Redux Toolkit for state management, and designed a fully responsive interface with advanced search and optimized routing.",
+      "Created a real estate app with JWT/Google auth, Firebase uploads, Redux Toolkit state management, and advanced search features.",
     technologies: [
-      "React.js",
-      "Express.js",
-      "JWT",
-      "Firebase",
-      "Redux Toolkit",
-      "Tailwind CSS",
-      "Google Auth",
-      "Node.js",
-      "MongoDB",
-      "bcrypt.js",
+      "React.js", "Express.js", "JWT", "Firebase", "Redux Toolkit", 
+      "Tailwind CSS", "Google Auth", "Node.js", "MongoDB", "bcrypt.js"
     ],
     links: [
       {
@@ -152,18 +118,14 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "/real-estate.png", // Random image URL from Lorem Picsum
+    image: "/real-estate.png",
   },
   {
     title: "MERN Blog Application",
     description:
-      "Built a blogging platform with secure user authentication via JWT and bcrypt.js. Created an admin dashboard for managing posts and interactions, with MongoDB as the backend.",
+      "Developed a blog platform with JWT-based auth, secure post management, and a MongoDB backend.",
     technologies: [
-      "React.js",
-      "Express.js",
-      "JWT",
-      "bcrypt.js",
-      "MongoDB",
+      "React.js", "Express.js", "JWT", "bcrypt.js", "MongoDB"
     ],
     links: [
       {
@@ -177,9 +139,10 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "./my-blog.png", // Random image URL from Lorem Picsum
+    image: "./my-blog.png",
   },
 ];
+
 
 
 const ProjectsSection: React.FC = () => {
