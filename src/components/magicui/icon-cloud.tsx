@@ -23,6 +23,16 @@ export function IconCloud({ icons, images }: IconCloudProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [iconPositions, setIconPositions] = useState<Icon[]>([]);
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRotation((prev) => ({
+        x: prev.x + 0.01,
+        y: prev.y + 0.01,
+      }));
+    }, 16);
+
+    return () => clearInterval(interval);
+  }, []);
   const [isDragging, setIsDragging] = useState(false);
   const [lastMousePos, setLastMousePos] = useState({ x: 0, y: 0 });
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
