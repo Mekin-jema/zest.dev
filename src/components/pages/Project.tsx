@@ -96,7 +96,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "./learning-management.png",
+    image: "./lms.png",
   },
   {
     title: "MERN Stack Real-Estate Application",
@@ -121,11 +121,12 @@ const projects: Project[] = [
     image: "/real-estate.png",
   },
   {
-    title: "MERN Blog Application",
+    title: "MERN  Stack Blog Application",
     description:
       "Developed a blog platform with JWT-based auth, secure post management, and a MongoDB backend.",
     technologies: [
-      "React.js", "Express.js", "JWT", "bcrypt.js", "MongoDB"
+ "React.js", "Express.js", "JWT", "Firebase", "Redux Toolkit", 
+      "Tailwind CSS", "Google Auth", "Node.js", "MongoDB", "bcrypt.js"
     ],
     links: [
       {
