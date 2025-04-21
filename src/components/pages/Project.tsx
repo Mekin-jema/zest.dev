@@ -9,6 +9,9 @@ interface Project {
   links: { type: string; href: string; icon: JSX.Element }[];
   image: string;
 }
+
+
+
 const projects: Project[] = [
   {
     title: "Ambalay Maps",
@@ -59,7 +62,7 @@ const projects: Project[] = [
     description:
       "Used pH, gas, and ultrasonic sensors to monitor sewer systems. Developed dashboards and apps for alerts, data visualization, and task management using ESP8266 and MongoDB.",
     technologies: [
-      "Node.js", "Express.js", "MongoDB", "React.js", "IoT", 
+      "Node.js", "Express.js", "MongoDB", "React.js", "IoT","Next.js","Shadcn", "TypeScript",
       "ESP8266", "Arduino"
     ],
     links: [
@@ -74,7 +77,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "/iot-1.png",
+    image: "/iot-drainage.png",
   },
   {
     title: "LMS - Learning Management System",
