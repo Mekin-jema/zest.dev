@@ -94,16 +94,7 @@ const About: React.FC = () => {
           modern and efficient solutions for every project.
         </motion.p>
 
-        {/* Download CV Button */}
-        <motion.a
-          href="./Mekin_Jemal_Main_CV.pdf"
-          download
-          variants={itemVariants}
-          className="inline-flex items-center gap-2 px-6 py-2.5 bg-blue-600 cursor-pointer text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-all z-[99999] duration-300"
-        >
-          <FiDownload className="text-xl " />
-          Download CV
-        </motion.a>
+ 
       </div>
     </motion.div>
   );

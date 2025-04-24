@@ -51,7 +51,7 @@ const projects: Project[] = [
       },
       {
         type: "Source",
-        href: "https://github.com/YourUsername/ministry-website",
+        href: "https://github.com/Mekin-jema/Minstry_Of_Industry/tree/main/frontend",
         icon: <Github className="w-4 h-4" />,
       },
     ],
@@ -73,7 +73,7 @@ const projects: Project[] = [
       },
       {
         type: "Source",
-        href: "https://github.com/YourUsername/IOT-Sewage-Monitoring",
+        href: "https://github.com/Mekin-jema/final-project",
         icon: <Github className="w-4 h-4" />,
       },
     ],
@@ -95,7 +95,7 @@ const projects: Project[] = [
       },
       {
         type: "Source",
-        href: "https://github.com/YourUsername/LMS-Platform",
+        href: "https://github.com/Mekin-jema/Learning_Managment_System",
         icon: <Github className="w-4 h-4" />,
       },
     ],
@@ -139,7 +139,7 @@ const projects: Project[] = [
       },
       {
         type: "Source",
-        href: "https://github.com/YourUsername/MERN-Blog-Application",
+        href: "https://github.com/Mekin-jema/MERN_Blog_App",
         icon: <Github className="w-4 h-4" />,
       },
     ],
