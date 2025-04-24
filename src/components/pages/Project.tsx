@@ -116,7 +116,7 @@ const projects: Project[] = [
       },
       {
         type: "Source",
-        href: "https://github.com/YourUsername/Real-Estate-App",
+        href: "https://github.com/Mekin-jema/real-estate-marketplace-app",
         icon: <Github className="w-4 h-4" />,
       },
     ],
