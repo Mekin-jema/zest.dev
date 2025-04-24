@@ -13,47 +13,84 @@ import { BriefcaseIcon, CodeIcon } from "lucide-react";
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "React Module Instructor",
-      company: "Google Developer Group (GDG)",
+      title: "React Module Instructor & Group Mentor",
+      company: "Google Developer Group (GDG AAU)",
       location: "Both (remote and in person)",
       duration: "March 2025 – Present",
       description:
-        "Delivering engaging React.js training sessions to aspiring developers as part of the Google Developer Group program at Innovation center, AAiT. Designed and taught React fundamentals, mentored participants through hands-on projects, and fostered an interactive learning environment.",
+        "Mentoring students in the GDG AAU MERN Stack Bootcamp by leading structured exercises, reviewing submissions, and providing personalized guidance. Collaborating with fellow mentors to deliver React.js training sessions, promote engagement, and foster a collaborative learning environment both online and on campus.",
       icon: <CodeIcon className="w-6 h-6" />,
-      skills: ["React", "JavaScript", "State Management", "API Integration"],
+      skills: [
+        "React",
+        "JavaScript",
+        "Mentorship",
+        "Teaching",
+        "Curriculum Design",
+        "State Management",
+        "API Integration"
+      ],
     },
+    
     {
       title: "Frontend Engineer",
       company: "Ambalay Maps",
       location: "Remote",
       duration: "January 2025 – Present",
       description:
-        "Gained hands-on experience in full-stack development and geospatial technologies. Designed a user-friendly dashboard for map-based services, built and enhanced production-ready APIs, and implemented localization features including Amharic language support.",
+        "Working as a core contributor to Ambalay Maps for over 5 months, specializing in geospatial web applications. Designed and developed an advanced map dashboard with real-time route planning, geocoding, and traffic analysis. Implemented features like customizable markers,POI, distance/time matrix tools, and VRP-based route optimization. Collaborated with backend teams to build production-ready geospatial APIs and contributed to localization efforts, including  Voice integration. Played a key role in shipping scalable features using modern frontend frameworks and deploying via containerized environments.",
       icon: <CodeIcon className="w-6 h-6" />,
-      skills: ["React", "Node.js", "Express.js", "Python", "PostgreSQL", "MongoDB", "Geospatial Data"],
+      skills: [
+        "React",
+        "Next.js",
+        "JavaScript",
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "Shadcn",
+        "MapLibre",
+        "OpenMapTiles",
+        "Maputnik",
+        "Valhalla",
+        "Docker",
+        "Vercel",
+        "Localization",
+        "Geospatial APIs",
+        "Route Optimization",
+        "UI/UX Design"
+      ],
     },
+    
     {
-      title: "Computer Engineer Intern",
+      title: "Web Developer Intern",
       company: "Ministry of Industry – Ethiopia",
       location: "Ethiopia",
       duration: "October 2024 – January 2025",
       description:
-        "Acquired a diverse skill set through various professional experiences. Collaborated with a company specializing in wired and wireless earphones, and developed a website to facilitate product importation, including tools for managing HS codes and product specifications.",
+        "Contributed to the Ministry’s mission of driving industrial growth and promoting trade by developing a responsive website that showcases its services and strategic goals. Built tools for managing HS codes and product specifications, streamlining data workflows to support transparent and efficient import regulation. The site helps communicate the Ministry’s role in policy-making, SME support, investment promotion, and sustainable industrial development.",
       icon: <BriefcaseIcon className="w-6 h-6" />,
-      skills: ["Web Development", "JavaScript", "Product Management", "Database Integration"],
-    },
-    {
-      title: "Frontend Developer",
-      company: "Prodigy InfoTech and Oasis Infobyte",
-      location: "India (Remote)",
-      duration: "May 2024 – June 2024",
-      description:
-        "Assisted in building and maintaining web applications using JavaScript, focusing on frontend development and enhancing user interfaces.",
-      icon: <CodeIcon className="w-6 h-6" />,
-      skills: ["JavaScript", "HTML", "CSS", "React"],
-    },
+      skills: [
+        "Web Development",
+        "JavaScript",
+        "Responsive Design",
+        "Database Integration",
+        "UI/UX",
+        "Information Architecture"
+      ],
+    }
+,    
+    
+{
+  title: "Frontend Developer Intern",
+  company: "Prodigy InfoTech and Oasis Infobyte",
+  location: "India (Remote)",
+  duration: "May 2024 – June 2024",
+  description:
+    "My first hands-on internship experience, where I contributed to building responsive web interfaces using JavaScript, HTML, CSS, and React. This opportunity ignited my passion for software engineering and motivated me to explore deeper into full-stack development and impactful tech solutions.",
+  icon: <CodeIcon className="w-6 h-6" />,
+  skills: ["JavaScript", "HTML", "CSS", "React", "Web Design", "Version Control"],
+}
+
   ];
-  
 
   const containerVariants = {
     hidden: { opacity: 0 },

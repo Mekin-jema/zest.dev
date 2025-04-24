@@ -43,15 +43,14 @@ const About: React.FC = () => {
       animate="visible"
     >
       {/* Image Section */}
-      <motion.div
-        className="md:w-1/3 mb-6 md:mb-0 flex justify-center"
-        variants={imageVariants}
-      >
+      <motion.div className="md:w-1/3 mb-4 md:mb-0" variants={imageVariants}>
         <motion.div
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.05, rotate: 5 }}
           whileTap={{ scale: 0.95 }}
-          className="w-44 h-44 md:w-60 md:h-80  overflow-hidden border-[5px] border-blue-500 shadow-xl bg-gradient-to-br from-blue-100 to-blue-200"
-          animate={{ y: [0, -10, 0] }}
+          className="relative w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden shadow-lg"
+          animate={{
+            y: [0, -10, 0],
+          }}
           transition={{
             duration: 5,
             repeat: Infinity,
@@ -59,9 +58,9 @@ const About: React.FC = () => {
           }}
         >
           <img
-            src="/me.png"
-            alt="Mekin Jemal"
-            className="w-full h-full "
+            src="./mekin.png"
+            alt="Rijo Sebastian"
+            className="w-full h-full object-cover object-left-top"
           />
         </motion.div>
       </motion.div>

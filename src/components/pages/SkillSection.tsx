@@ -7,6 +7,7 @@ import { Badge } from "../ui/badge";
 const slugs = [
   "typescript",
   "javascript",
+  "redux Toolkit",
   "nextdotjs",
   "postman",
   "mongodb",
@@ -22,12 +23,15 @@ const slugs = [
   "firebase",
   "vercel",
   "testinglibrary",
-  "jest",
   "docker",
   "git",
   "github",
   "visualstudiocode",
   "figma",
+  "tailwindcss",
+  "shadcn",
+  "magic ui",
+  "maplibre",
 ];
 
 const SkillsSection: React.FC = () => {
@@ -110,7 +114,7 @@ const SkillsSection: React.FC = () => {
             >
               <Badge
                 variant="outline"
-                className=" capitalize cursor-pointer bg-black text-white dark:bg-[#FAFAFA]   dark:text-black text-sm sm:text-base ml-0  rounded-lg transition-colors duration-300 hover:bg-gray-200 dark:hover:bg-gray-300 "
+                className=" capitalize cursor-pointer bg-black text-white dark:bg-[#FAFAFA]   dark:text-black text-sm sm:text-base ml-0  rounded-lg transition-colors duration-300 hover:bg-gray-800 dark:hover:bg-gray-300 "
               >
                 {slug}
               </Badge>
