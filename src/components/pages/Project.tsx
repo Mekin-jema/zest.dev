@@ -23,7 +23,7 @@ const projects: Project[] = [
     links: [
       {
         type: "Website",
-        href: "https://sample-steel-six.vercel.app/dashboard",
+        href: "https://sample-steel-six.vercel.app/dashlboard",
         icon: <Globe className="w-4 h-4" />,
       },
       {
