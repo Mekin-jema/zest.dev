@@ -15,8 +15,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Ambalay Maps",
-    description:
-      "Built a map service dashboard with route Developed a dynamic map dashboard with route planning, geocoding, and real-time traffic updates. Integrated customizable layers, marker types, and address search with reverse geocoding. Built distance/time matrix tools and optimized delivery routes using a VRP solver. Utilized OpenMapTiles, MapLibre, and Valhalla for rendering and routing.",
+    description:"Built an interactive map dashboard with route planning, geocoding, traffic updates, and route optimization using VRP.Integrated customizable layers, markers, and used OpenMapTiles, MapLibre, and Valhalla for rendering and routing.",
     technologies: [
       "Node.js", "Express.js", "Python", "MongoDB", "PostgreSQL", 
       "React.js", "MapLibre", "OpenMapTiles", "Valhalla"
