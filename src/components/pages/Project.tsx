@@ -10,20 +10,26 @@ interface Project {
   image: string;
 }
 
-
-
 const projects: Project[] = [
   {
     title: "Ambalay Maps",
-    description:"Built an interactive map dashboard with route planning, geocoding, traffic updates, and route optimization using VRP.Integrated customizable layers, markers, and used OpenMapTiles, MapLibre, and Valhalla for rendering and routing.",
+    description:
+      "Built an interactive map dashboard with route planning, geocoding, traffic updates, and route optimization using VRP.Integrated customizable layers, markers, and used OpenMapTiles, MapLibre, and Valhalla for rendering and routing.",
     technologies: [
-      "Node.js", "Express.js", "Python", "MongoDB", "PostgreSQL", 
-      "React.js", "MapLibre", "OpenMapTiles", "Valhalla"
+      "Node.js",
+      "Express.js",
+      "Python",
+      "MongoDB",
+      "PostgreSQL",
+      "React.js",
+      "MapLibre",
+      "OpenMapTiles",
+      "Valhalla",
     ],
     links: [
       {
         type: "Website",
-        href: "https://sample-steel-six.vercel.fdapp/dashlboard",
+        href: "https://sample-steel-six.vercel.app/",
         icon: <Globe className="w-4 h-4" />,
       },
       {
@@ -32,15 +38,20 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "./ambalay-maps4.png"
+    image: "./ambalay-maps4.png",
   },
   {
     title: "Ministry of Industry Website Development",
     description:
       "Designed and developed a responsive, accessible website for the Ministry of Industry with CMS features for easy updates and performance optimizations.",
     technologies: [
-      "React.js", "Next.js", "Tailwind CSS", "Node.js", "Express.js", 
-      "MongoDB", "Vercel"
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vercel",
     ],
     links: [
       {
@@ -57,22 +68,30 @@ const projects: Project[] = [
     image: "/ministry-of-industry.png",
   },
   {
-    title: "IoT-Based Smart Sewage Monitoring System",
+    title: "IoT-Based Smart Drainage Monitoring System",
     description:
       "Used pH, gas, and ultrasonic sensors to monitor sewer systems. Developed dashboards and apps for alerts, data visualization, and task management using ESP8266 and MongoDB.",
     technologies: [
-      "Node.js", "Express.js", "MongoDB", "React.js", "IoT","Next.js","Shadcn", "TypeScript",
-      "ESP8266", "Arduino"
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React.js",
+      "IoT",
+      "Next.js",
+      "Shadcn",
+      "TypeScript",
+      "ESP8266",
+      "Arduino",
     ],
     links: [
       {
         type: "Website",
-        href: "https://iot-sewage-monitoring.com",
+        href: "https://final-project-wz7h.onrender.com/",
         icon: <Globe className="w-4 h-4" />,
       },
       {
         type: "Source",
-        href: "https://github.com/Mekin-jema/final-project",
+        href: "https://github.com/Mekin-jema/final-project-v1",
         icon: <Github className="w-4 h-4" />,
       },
     ],
@@ -83,8 +102,16 @@ const projects: Project[] = [
     description:
       "Built a scalable LMS with real-time notifications, user auth, admin dashboard, and course management using MERN stack and TypeScript.",
     technologies: [
-      "MongoDB", "Express.js", "React.js", "Node.js", "TypeScript", 
-      "Socket.io", "Redis", "Tailwind CSS", "RTK Query", "Node-cron"
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "TypeScript",
+      "Socket.io",
+      "Redis",
+      "Tailwind CSS",
+      "RTK Query",
+      "Node-cron",
     ],
     links: [
       {
@@ -105,8 +132,16 @@ const projects: Project[] = [
     description:
       "Created a real estate app with JWT/Google auth, Firebase uploads, Redux Toolkit state management, and advanced search features.",
     technologies: [
-      "React.js", "Express.js", "JWT", "Firebase", "Redux Toolkit", 
-      "Tailwind CSS", "Google Auth", "Node.js", "MongoDB", "bcrypt.js"
+      "React.js",
+      "Express.js",
+      "JWT",
+      "Firebase",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Google Auth",
+      "Node.js",
+      "MongoDB",
+      "bcrypt.js",
     ],
     links: [
       {
@@ -127,8 +162,16 @@ const projects: Project[] = [
     description:
       "Developed a blog platform with JWT-based auth, secure post management, and a MongoDB backend.",
     technologies: [
- "React.js", "Express.js", "JWT", "Firebase", "Redux Toolkit", 
-      "Tailwind CSS", "Google Auth", "Node.js", "MongoDB", "bcrypt.js"
+      "React.js",
+      "Express.js",
+      "JWT",
+      "Firebase",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Google Auth",
+      "Node.js",
+      "MongoDB",
+      "bcrypt.js",
     ],
     links: [
       {
@@ -146,8 +189,6 @@ const projects: Project[] = [
   },
 ];
 
-
-
 const ProjectsSection: React.FC = () => {
   return (
     <section className=" w-full max-w-6xl  ">
@@ -156,9 +197,7 @@ const ProjectsSection: React.FC = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-        className="text-4xl  text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
-          
-
+          className="text-4xl  text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
         >
           My Projects
         </motion.h2>
@@ -174,8 +213,6 @@ const ProjectsSection: React.FC = () => {
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
-
-         
         </motion.div>
       </div>
     </section>
