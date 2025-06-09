@@ -38,7 +38,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "./ambalay-maps4.png",
+    image: "./landing-page.png",
   },
   {
     title: "IoT-Based Smart Drainage Monitoring System",
