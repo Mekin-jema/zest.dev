@@ -27,10 +27,10 @@ const Experience: React.FC = () => {
         "Teaching",
         "Curriculum Design",
         "State Management",
-        "API Integration"
+        "API Integration",
       ],
     },
-    
+
     {
       title: "Frontend Engineer",
       company: "Ambalay Maps",
@@ -41,7 +41,7 @@ const Experience: React.FC = () => {
       icon: <CodeIcon className="w-6 h-6" />,
       skills: [
         "React",
-        "Next.js",
+        "Next js",
         "JavaScript",
         "TypeScript",
         "Next.js",
@@ -56,10 +56,10 @@ const Experience: React.FC = () => {
         "Localization",
         "Geospatial APIs",
         "Route Optimization",
-        "UI/UX Design"
+        "UI/UX Design",
       ],
     },
-    
+
     {
       title: "Web Developer Intern",
       company: "Ministry of Industry – Ethiopia",
@@ -74,22 +74,26 @@ const Experience: React.FC = () => {
         "Responsive Design",
         "Database Integration",
         "UI/UX",
-        "Information Architecture"
+        "Information Architecture",
       ],
-    }
-,    
-    
-{
-  title: "Frontend Developer Intern",
-  company: "Prodigy InfoTech and Oasis Infobyte",
-  location: "India (Remote)",
-  duration: "May 2024 – June 2024",
-  description:
-    "My first hands-on internship experience, where I contributed to building responsive web interfaces using JavaScript, HTML, CSS, and React. This opportunity ignited my passion for software engineering and motivated me to explore deeper into full-stack development and impactful tech solutions.",
-  icon: <CodeIcon className="w-6 h-6" />,
-  skills: ["JavaScript", "HTML", "CSS", "React", "Web Design", "Version Control"],
-}
-
+    },
+    {
+      title: "Frontend Developer Intern",
+      company: "Prodigy InfoTech and Oasis Infobyte",
+      location: "India (Remote)",
+      duration: "May 2024 – June 2024",
+      description:
+        "My first hands-on internship experience, where I contributed to building responsive web interfaces using JavaScript, HTML, CSS, and React. This opportunity ignited my passion for software engineering and motivated me to explore deeper into full-stack development and impactful tech solutions.",
+      icon: <CodeIcon className="w-6 h-6" />,
+      skills: [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React",
+        "Web Design",
+        "Version Control",
+      ],
+    },
   ];
 
   const containerVariants = {

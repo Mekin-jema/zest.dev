@@ -41,33 +41,6 @@ const projects: Project[] = [
     image: "./ambalay-maps4.png",
   },
   {
-    title: "Ministry of Industry Website Development",
-    description:
-      "Designed and developed a responsive, accessible website for the Ministry of Industry with CMS features for easy updates and performance optimizations.",
-    technologies: [
-      "React.js",
-      "Next.js",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Vercel",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://intership-1.onrender.com/",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/Mekin-jema/Minstry_Of_Industry/tree/main/frontend",
-        icon: <Github className="w-4 h-4" />,
-      },
-    ],
-    image: "/ministry-of-industry.png",
-  },
-  {
     title: "IoT-Based Smart Drainage Monitoring System",
     description:
       "Used pH, gas, and ultrasonic sensors to monitor sewer systems. Developed dashboards and apps for alerts, data visualization, and task management using ESP8266 and MongoDB.",
@@ -103,6 +76,7 @@ const projects: Project[] = [
       "Built a scalable LMS with real-time notifications, user auth, admin dashboard, and course management using MERN stack and TypeScript.",
     technologies: [
       "MongoDB",
+      "Next.js",
       "Express.js",
       "React.js",
       "Node.js",
@@ -126,6 +100,33 @@ const projects: Project[] = [
       },
     ],
     image: "./lms.png",
+  },
+  {
+    title: "Ministry of Industry Website Development",
+    description:
+      "Designed and developed a responsive, accessible website for the Ministry of Industry with CMS features for easy updates and performance optimizations.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Vercel",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://intership-1.onrender.com/",
+        icon: <Globe className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/Mekin-jema/Minstry_Of_Industry/tree/main/frontend",
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: "/ministry-of-industry.png",
   },
   {
     title: "MERN Stack Real-Estate Application",
