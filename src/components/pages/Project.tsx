@@ -38,7 +38,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "./landing-page.png",
+    image: "./ambalay-maps4.png",
   },
   {
     title: "IoT-Based Smart Drainage Monitoring System",
@@ -68,7 +68,7 @@ const projects: Project[] = [
         icon: <Github className="w-4 h-4" />,
       },
     ],
-    image: "/iot-drainage.png",
+    image: "./landing-page.png",
   },
   {
     title: "LMS - Learning Management System",
