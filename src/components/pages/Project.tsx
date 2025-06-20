@@ -14,7 +14,7 @@ const projects: Project[] = [
   {
     title: "Ambalay Maps",
     description:
-      "Built an interactive map dashboard with route planning, geocoding, traffic updates, and route optimization using VRP.Integrated customizable layers, markers, and used OpenMapTiles, MapLibre, and Valhalla for rendering and routing.",
+      "Built an interactive map dashboard with route planning, geocoding, traffic updates, and route optimization using VRP. Integrated customizable layers, markers, and used OpenMapTiles, MapLibre, and Valhalla for rendering and routing.",
     technologies: [
       "Node.js",
       "Express.js",
@@ -69,6 +69,34 @@ const projects: Project[] = [
       },
     ],
     image: "./landing-page.png",
+  },
+  {
+    title: "AmbaLay Delivery Platform",
+    description:
+      "Developed a responsive, scalable delivery service platform using Next.js, TypeScript, and Tailwind CSS. Showcases services such as e-commerce delivery, courier services, government logistics, and bulk transport with real-time tracking and modern UI/UX.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React.js",
+      "Shadcn",
+      "Vercel",
+      "Magic UI",
+      
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://amba-platform.vercel.app", // Replace with actual deployed URL
+        icon: <Globe className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/Mekin-jema/ambalay-delivery", // Replace with actual GitHub repo
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: "./ambalay-delivery-app.png", // Replace with actual image path
   },
   {
     title: "LMS - Learning Management System",
@@ -158,37 +186,9 @@ const projects: Project[] = [
     ],
     image: "/real-estate.png",
   },
-  {
-    title: "MERN  Stack Blog Application",
-    description:
-      "Developed a blog platform with JWT-based auth, secure post management, and a MongoDB backend.",
-    technologies: [
-      "React.js",
-      "Express.js",
-      "JWT",
-      "Firebase",
-      "Redux Toolkit",
-      "Tailwind CSS",
-      "Google Auth",
-      "Node.js",
-      "MongoDB",
-      "bcrypt.js",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://blog-app.com",
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/Mekin-jema/MERN_Blog_App",
-        icon: <Github className="w-4 h-4" />,
-      },
-    ],
-    image: "./my-blog.png",
-  },
+
 ];
+
 
 const ProjectsSection: React.FC = () => {
   return (
