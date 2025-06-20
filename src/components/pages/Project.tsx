@@ -11,6 +11,34 @@ interface Project {
 }
 
 const projects: Project[] = [
+    {
+    title: "AmbaLay Delivery Platform",
+    description:
+      "Developed a responsive, scalable delivery service platform using Next.js, TypeScript, and Tailwind CSS. Showcases services such as e-commerce delivery, courier services, government logistics, and bulk transport with real-time tracking and modern UI/UX.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React.js",
+      "Shadcn",
+      "Vercel",
+      "Magic UI",
+      
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://amba-platform.vercel.app", // Replace with actual deployed URL
+        icon: <Globe className="w-4 h-4" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/Mekin-jema/ambalay-delivery", // Replace with actual GitHub repo
+        icon: <Github className="w-4 h-4" />,
+      },
+    ],
+    image: "./ambalay-delivery-app.png", // Replace with actual image path
+  },
   {
     title: "Ambalay Maps",
     description:
@@ -70,34 +98,7 @@ const projects: Project[] = [
     ],
     image: "./landing-page.png",
   },
-  {
-    title: "AmbaLay Delivery Platform",
-    description:
-      "Developed a responsive, scalable delivery service platform using Next.js, TypeScript, and Tailwind CSS. Showcases services such as e-commerce delivery, courier services, government logistics, and bulk transport with real-time tracking and modern UI/UX.",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "React.js",
-      "Shadcn",
-      "Vercel",
-      "Magic UI",
-      
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://amba-platform.vercel.app", // Replace with actual deployed URL
-        icon: <Globe className="w-4 h-4" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/Mekin-jema/ambalay-delivery", // Replace with actual GitHub repo
-        icon: <Github className="w-4 h-4" />,
-      },
-    ],
-    image: "./ambalay-delivery-app.png", // Replace with actual image path
-  },
+
   {
     title: "LMS - Learning Management System",
     description:
