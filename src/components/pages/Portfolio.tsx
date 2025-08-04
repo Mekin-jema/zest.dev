@@ -38,7 +38,7 @@ const useScrollDirection = () => {
   return scrollDirection;
 };
 
-const AnimatedSection:React.FC<AnimatedSectionProps> = ({ children }) => {
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.2,
@@ -84,7 +84,7 @@ const AnimatedSection:React.FC<AnimatedSectionProps> = ({ children }) => {
 
 function Portfolio() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center w-[870px] mx-w-8xl mx-auto">
+    <div className="min-h-screen flex flex-col items-center justify-center w-full max-w-7xl mx-auto px-4">
       <ParticlesDemo />
       <DockDemo />
       <div className="flex flex-col items-center justify-center p-2 w-full">
@@ -98,11 +98,12 @@ function Portfolio() {
             <Header />
           </div>
         </motion.div>
+
         <AnimatedSection>
           <About />
         </AnimatedSection>
         <AnimatedSection>
-         <Education />
+          <Education />
         </AnimatedSection>
         <AnimatedSection>
           <Experience />
@@ -113,9 +114,8 @@ function Portfolio() {
         <AnimatedSection>
           <ProjectsSection />
         </AnimatedSection>
-    
-         <AnimatedSection>
-         <MarqueeDemo />
+        <AnimatedSection>
+          <MarqueeDemo />
         </AnimatedSection>
         <AnimatedSection>
           <Footer />

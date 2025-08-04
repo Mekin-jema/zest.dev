@@ -134,13 +134,13 @@ const Experience: React.FC = () => {
 
   return (
     <motion.div
-      className="max-w-6xl mx-auto p-4 sm:p-6 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-blue-900 rounded-xl shadow-lg mt-10"
+      className="max-w-6xl mx-auto p-4 sm:p-6 rounded-xl shadow-lg mt-10"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
       <motion.h2
-        className="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
+        className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
         variants={titleVariants}
       >
         Work Experience
@@ -149,7 +149,7 @@ const Experience: React.FC = () => {
       <div className="space-y-6">
         {experiences.map((exp, index) => (
           <motion.div key={index} variants={itemVariants}>
-            <Card className="overflow-hidden bg-white dark:bg-gray-800 hover:shadow-xl transition-shadow duration-300 border-none">
+            <Card className="overflow-hidden  hover:shadow-xl transition-shadow duration-300 border-none">
               <CardHeader className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pb-2">
                 <motion.div
                   whileHover={{ scale: 1.1, rotate: 360 }}
@@ -159,19 +159,22 @@ const Experience: React.FC = () => {
                   {exp.icon}
                 </motion.div>
                 <div className="flex-grow">
-                  <CardTitle className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                  <CardTitle className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
                     {exp.title}
                   </CardTitle>
-                  <CardDescription className="text-sm text-gray-600 dark:text-gray-400">
+                  <CardDescription className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                     {exp.company} | {exp.location}
                   </CardDescription>
                 </div>
-                <Badge variant="secondary" className="mt-2 sm:mt-0">
+                <Badge
+                  variant="secondary"
+                  className="mt-2 sm:mt-0 text-xs sm:text-sm whitespace-nowrap"
+                >
                   {exp.duration}
                 </Badge>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
                   {exp.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -183,7 +186,7 @@ const Experience: React.FC = () => {
                     >
                       <Badge
                         variant="outline"
-                        className="bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-300 cursor-pointer"
+                        className="bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-300 cursor-pointer text-xs sm:text-sm"
                       >
                         {skill}
                       </Badge>

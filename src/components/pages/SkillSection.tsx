@@ -42,9 +42,7 @@ const SkillsSection: React.FC = () => {
   });
 
   React.useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
+    if (inView) controls.start("visible");
   }, [controls, inView]);
 
   const containerVariants = {
@@ -61,30 +59,23 @@ const SkillsSection: React.FC = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const images = slugs.map(
-    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
+  const images = slugs.map((slug) =>
+    `https://cdn.simpleicons.org/${slug.toLowerCase().replace(/\s+/g, "")}`
   );
 
   return (
     <motion.div
       ref={ref}
-      className=" max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 bg-background rounded-xl shadow-lg mt-10 w-[700px]  mb-6"
+      className="max-w-full sm:max-w-3xl md:max-w-5xl lg:max-w-6xl mx-auto p-4 sm:p-6 lg:p-8 bg-background rounded-xl shadow-lg mt-10 mb-6"
       variants={containerVariants}
       initial="hidden"
       animate={controls}
     >
       <motion.h2
-        className="text-4xl  text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
-
+        className="text-3xl sm:text-4xl text-gray-800 dark:text-white font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
         variants={itemVariants}
       >
         Skills
@@ -92,17 +83,16 @@ const SkillsSection: React.FC = () => {
 
       <div className="flex flex-col items-center justify-center space-y-6">
         <motion.div
-          className="relative flex  w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg px-4"
+          className="relative flex w-full max-w-full sm:max-w-[32rem] items-center justify-center overflow-hidden rounded-lg px-4"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.5 }}
         >
-   <IconCloud images={images}  />
-
+          <IconCloud images={images} />
         </motion.div>
 
         <motion.div
-          className="flex flex-wrap  justify-start gap-2"
+          className="flex flex-wrap justify-center sm:justify-start gap-2"
           variants={itemVariants}
         >
           {slugs.map((slug, index) => (
@@ -110,11 +100,12 @@ const SkillsSection: React.FC = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }} className="flex items-center justify-start p-0"
+              whileTap={{ scale: 0.9 }}
+              className="flex items-center justify-center p-0"
             >
               <Badge
                 variant="outline"
-                className=" capitalize cursor-pointer bg-black text-white dark:bg-[#FAFAFA]   dark:text-black text-sm sm:text-base ml-0  rounded-lg transition-colors duration-300 hover:bg-gray-800 dark:hover:bg-gray-300 "
+                className="capitalize cursor-pointer bg-black text-white dark:bg-[#FAFAFA] dark:text-black text-xs sm:text-sm rounded-lg transition-colors duration-300 hover:bg-gray-800 dark:hover:bg-gray-300"
               >
                 {slug}
               </Badge>

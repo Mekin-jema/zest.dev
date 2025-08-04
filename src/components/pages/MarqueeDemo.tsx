@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils"
-import { Marquee } from "../magicui/marquee"
-import { motion } from "framer-motion"
+import { cn } from "@/lib/utils";
+import { Marquee } from "../magicui/marquee";
+import { motion } from "framer-motion";
 
 const itemVariants = {
   hidden: { y: 20, opacity: 0 },
@@ -8,7 +8,7 @@ const itemVariants = {
     y: 0,
     opacity: 1,
   },
-}
+};
 
 const reviews = [
   {
@@ -83,10 +83,10 @@ const reviews = [
     body: "Mekin’s growth journey is inspiring. He’s gone from a learner to a leader in record time.",
     img: "https://randomuser.me/api/portraits/men/39.jpg",
   },
-]
+];
 
-const firstRow = reviews.slice(0, reviews.length / 2)
-const secondRow = reviews.slice(reviews.length / 2)
+const firstRow = reviews.slice(0, reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
   img,
@@ -94,20 +94,21 @@ const ReviewCard = ({
   username,
   body,
 }: {
-  img: string
-  name: string
-  username: string
-  body: string
+  img: string;
+  name: string;
+  username: string;
+  body: string;
 }) => {
   return (
     <figure
       className={cn(
-        "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative cursor-pointer overflow-hidden rounded-xl border p-4",
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+        "w-full max-w-xs sm:w-64"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
+      <div className="flex items-center gap-2">
         <img
           className="rounded-full object-cover"
           width="32"
@@ -128,35 +129,45 @@ const ReviewCard = ({
         {body}
       </blockquote>
     </figure>
-  )
-}
+  );
+};
 
 export default function MarqueeDemo() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden px-4 sm:px-0">
       <motion.h2
-        className="text-4xl  text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
-         
-
+        className="text-3xl sm:text-4xl text-gray-800 dark:text-white font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400"
         variants={itemVariants}
+        initial="hidden"
+        animate="visible"
       >
         Testimonials
       </motion.h2>
 
-      <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((review) => (
-          <ReviewCard key={review.name} {...review} />
-        ))}
-      </Marquee>
+      {/* Marquee visible on sm and up */}
+      <div className="hidden sm:block w-full">
+        <Marquee pauseOnHover className="[--duration:20s] mb-6">
+          {firstRow.map((review) => (
+            <ReviewCard key={review.name} {...review} />
+          ))}
+        </Marquee>
 
-      <Marquee reverse pauseOnHover className="[--duration:20s]">
-        {secondRow.map((review) => (
+        <Marquee reverse pauseOnHover className="[--duration:20s]">
+          {secondRow.map((review) => (
+            <ReviewCard key={review.name} {...review} />
+          ))}
+        </Marquee>
+      </div>
+
+      {/* Vertical stack fallback on mobile */}
+      <div className="sm:hidden flex flex-col gap-6 w-full max-w-md">
+        {reviews.map((review) => (
           <ReviewCard key={review.name} {...review} />
         ))}
-      </Marquee>
+      </div>
 
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
     </div>
-  )
+  );
 }

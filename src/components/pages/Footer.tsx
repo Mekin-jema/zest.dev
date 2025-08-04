@@ -8,14 +8,14 @@ const Footer: React.FC = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" border rounded-xl max-w-6xl w-full py-4 mb-14 "
+      className="border rounded-xl max-w-6xl w-full py-4 mb-14"
     >
-      <div className="max-w-4xl mx-auto px-4 ">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
-          className="flex justify-center items-center space-x-4 text-sm"
+          className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-center sm:text-left"
         >
           <a
             href="tel:+251920064543"
@@ -31,15 +31,16 @@ const Footer: React.FC = () => {
           >
             <Mail className="h-5 w-5" />
           </a>
-          <span className="flex items-center">
-            Made with <Heart className="h-4 w-4 mx-1 text-red-400" /> by
+          <span className="flex flex-wrap justify-center items-center text-gray-700 dark:text-gray-300">
+            Made with{" "}
+            <Heart className="h-4 w-4 mx-1 text-red-400 flex-shrink-0" /> by
             <a
               href="https://www.instagram.com/mekin.jemal/"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-1 font-semibold hover:underline"
             >
-           Mekin Jemal
+              Mekin Jemal
             </a>
           </span>
         </motion.div>

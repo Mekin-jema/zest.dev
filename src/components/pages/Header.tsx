@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import BoxReveal from "@/components/magicui/box-reveal";
 
 interface GradientTextProps {
-  text:  React.ReactNode;
+  text: React.ReactNode;
   className?: string;
 }
 
@@ -41,7 +41,7 @@ const WordAnimation: React.FC = () => (
 
 const GradientText: React.FC<GradientTextProps> = ({ text, className }) => (
   <motion.h1
-    className={`bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent ${className}`}
+    className={`bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent ${className} max-w-full sm:max-w-xl mx-auto`}
     initial={{ opacity: 0, y: -20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
@@ -52,13 +52,13 @@ const GradientText: React.FC<GradientTextProps> = ({ text, className }) => (
 
 const SubTitle: React.FC = () => (
   <motion.div
-    className="w-full text-center mt-4 flex justify-center"
+    className="w-full text-center mt-4 flex justify-center px-2 sm:px-0"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.4 }}
   >
     <BoxReveal boxColor="#3b82f6" duration={0.5}>
-      <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 text-center">
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-gray-700 dark:text-gray-300 text-center max-w-full sm:max-w-lg">
         Full Stack Developer
       </p>
     </BoxReveal>
@@ -67,10 +67,10 @@ const SubTitle: React.FC = () => (
 
 const Header: React.FC = () => {
   return (
-    <div className="flex flex-col items-center px-4 gap-10 py-12">
-      <div className="text-center my-4">
+    <div className="flex flex-col items-center px-4 sm:px-6 gap-8 sm:gap-10 py-10 sm:py-12 max-w-screen-md mx-auto">
+      <div className="text-center w-full">
         <GradientText
-          className="font-display text-center font-bold tracking-[-0.05em] text-4xl lg:text-6xl md:p-2"
+          className="font-display font-bold tracking-[-0.05em] text-3xl sm:text-4xl md:text-5xl lg:text-6xl p-2"
           text={<WordAnimation />}
         />
         <div className="mt-2 text-center">
